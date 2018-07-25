@@ -4,10 +4,10 @@
 
 int main()
 {
-	int num;
-	char str[10];//存放转换后的 num 
-	printf("enter a number : ");
-	scanf("%d", &num);
+    int num;
+    char str[10];//存放转换后的 num 
+    printf("enter a number : ");
+    scanf("%d", &num);
 	
 	
     int dec = 1;
@@ -16,8 +16,8 @@ int main()
 
     if (num < 0)
     {
-                str[i++] = '-';
-                num = -num;
+        str[i++] = '-';
+        num = -num;
     }
 
     temp = num;
@@ -39,5 +39,6 @@ int main()
         
     printf("the string is: %s", str);
 	
-	return 0;
+    return 0;
 }
+
