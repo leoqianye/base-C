@@ -30,7 +30,7 @@ int main()
 
     while (dec != 0)
     {
-        str[i++] = num / dec + '0';
+        str[i++] = num / dec + '0'; // + ‘0’ 作用是将整型数据 num / dec 转换成字符型
         num = num % dec;
         dec /= 10;
     }
