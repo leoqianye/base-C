@@ -22,9 +22,9 @@ int main()
 
     temp = num;
 
-    while (temp > 9)
+    while (temp > 9) // 类似于降阶，temp 最终降至个位数
     {
-        dec *= 10;
+        dec *= 10; // dec 升阶，最终与 num 数量级相同
         temp /= 10;
     }
 
