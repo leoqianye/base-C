@@ -1,0 +1,43 @@
+//将整型数据转换成字符串 
+
+#include <stdio.h>
+
+int main()
+{
+	int num;
+	char str[10];//存放转换后的 num 
+	printf("enter a number : ");
+	scanf("%d", &num);
+	
+	
+    int dec = 1;
+    int i = 0;
+    int temp;
+
+    if (num < 0)
+    {
+                str[i++] = '-';
+                num = -num;
+    }
+
+    temp = num;
+
+    while (temp > 9)
+    {
+        dec *= 10;
+        temp /= 10;
+    }
+
+    while (dec != 0)
+    {
+        str[i++] = num / dec + '0';
+        num = num % dec;
+        dec /= 10;
+    }
+
+    str[i] = '\0';
+        
+    printf("the string is: %s", str);
+	
+	return 0;
+}
